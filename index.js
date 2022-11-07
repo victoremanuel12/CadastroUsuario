@@ -6,12 +6,9 @@ function ValidarSenha(event) {
    const senha = document.querySelector('#senha').value.trim();
    const confirmarSenha = document.querySelector('#confirmarSenha').value.trim();
    let empty = false;
-
    inputs.forEach(input => {
       if (input.value == "") empty = true; 
    })
-
-
    let arraySenha = senha.split('')
    let senhaComNumero = false;
    let senhaComLetra = false;
@@ -19,7 +16,6 @@ function ValidarSenha(event) {
       if (!isNaN(item)  ) senhaComNumero = true;
       if(isNaN(item)) senhaComLetra= true;
    })
-
    if (empty) {
       errorSubmitDados.classList.remove('alertSucess')
       errorSubmitDados.classList.add('alertImputEmpty')
@@ -39,7 +35,6 @@ function ValidarSenha(event) {
    }else if(senha == confirmarSenha && empty == false && senhaComNumero && senhaComLetra){
       errorSubmitDados.classList.add('alertSucess')
       errorSubmitDados.textContent="Usuario Cadastrado com sucesso!"
-   
    }
   
 }
