@@ -1,0 +1,116 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url(https://cdn.pixabay.com/photo/2016/11/21/15/58/wedding-1846114_960_720.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   overflow-x: hidden;
+   height: 100vh;
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+
+
+}
+
+.forms {
+   background-color: rgba(252, 250, 250, 0.261);
+   border-radius: 40px;
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   padding: 10px 0;
+   color: white;
+
+}
+
+.forms h1 {
+   color: #042940;
+   margin-bottom: 10px;
+   font-weight: 500;
+
+}
+
+.labelDados strong {
+   color: red;
+}
+
+.inputDados {
+   border: 1px solid black;
+   border-radius: 5px;
+   width: 40%;
+   height: 45px;
+   padding: 5px 10px;
+   cursor: pointer;
+
+}
+
+.inputDados span {
+   margin-bottom: 5px;
+}
+
+.inputDados:hover {
+   border: 1px solid rgb(65, 65, 206);
+
+}
+
+.forms .submitDados {
+   background-color: #042940;
+   color: white;
+   width: 30%;
+   height: 45px;
+   border-radius: 10px;
+   padding: 5px 10px;
+   margin-top: 10px;
+   cursor: pointer;
+
+}
+
+.forms .submitDados:hover {
+   border: 1px solid rgb(52, 52, 228);
+
+}
+
+.forms .logins {
+   display: flex;
+   align-items: center;
+   gap: 2rem;
+   margin-top: 15px;
+}
+
+.inputEmpty {
+   border: 2px solid red;
+   color: red;
+}
+
+.alertImputEmpty {
+   color: red;
+}
+
+.alertSucess {
+   color: green;
+}
+
+@media screen and (max-width:375px) {
+  
+   .forms {
+      background-color: rgba(252, 250, 250, 0.442);
+      width: 90%;
+      color: black;
+   }
+
+   .inputDados {
+      width: 80%;
+   }
+
+   .forms .submitDados {
+      width: 80%;
+   }
+}
